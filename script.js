@@ -34,13 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Display feedback
         feedbackDiv.style.display = "block"; // Show feedback div
-
-        if (isValid) {
-            // If all validations pass
+         if (isValid) {
             feedbackDiv.textContent = "Registration sucessful!";
             feedbackDiv.style.color = "#28a745"; // Green color for success
         } else {
-            // If there are validation errors
             feedbackDiv.innerHTML = messages.join("<br>"); // Display error messages
             feedbackDiv.style.color ="#dc3545"; // Red color for errors
         }

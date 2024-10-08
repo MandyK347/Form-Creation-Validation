@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackDiv.style.color = "#28a754"; // Green color for success
         } else {
             // If there are validation errors
-            feedbackDiv.innerHTML = messages.join('<br>'); // Display error messages
+            feedbackDiv.innerHTML = messages.join("<br>"); // Display error messages
             feedbackDiv.style.color ="#dc3545"; // Red color for errors
         }
     });

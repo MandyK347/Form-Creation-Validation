@@ -3,7 +3,7 @@
 // Define an asynchronous function to fetch user data
 async function fetchUserData() {
     // Define the API URL
-    const apiUrl = 'http://jsonplaceholder.typicode.com/users';
+    const apiUrl = 'https://jsonplaceholder.typicode.com/users';
 
     // Select the data container element
     const dataContainer = document.getElementById('api-data');

@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
              feedbackDiv.textContent = "Registration successful!";
              feedbackDiv.style.color = "#28a745"; // Success color
         } else {
-            feedbackDiv.innerHTML = messages.join("<br>");
+            const errorMessage = messages.join("<br>");
             feedbackDiv.style.display = "block"
-            feedbackDiv.innerHTML = errorMessage;
+            feedbackDiv.innerHTML = errorMessages;
             feedbackDiv.style.color = "#dc3545"; // Error color
         }
     });

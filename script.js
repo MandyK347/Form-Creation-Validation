@@ -32,19 +32,14 @@ document.addEventListener('DOMContentLoaded', function () {
             messages.push("Password must be at least 8 characters long");
         }
 
-        // Display feedback
-        function displayFeedback () {
-            // make feedback visible
-        feedbackDiv.style.display = "block"; // Show feedback div
+         // Display feedback
+         feedbackDiv.style.display = "block"; // Show feedback div
          if (isValid) {
-            // Set success message
-            feedbackDiv.textContent = "Registration sucessful!";
-            feedbackDiv.style.color = "#28a745"; // Green color for success
+             feedbackDiv.textContent = "Registration successful!";
+             feedbackDiv.style.color = "#28a745"; // Success color
         } else {
-            // Join error messages and display them
-            feedbackDiv.innerHTML = messages.join("<br>"); // Display error messages
-            feedbackDiv.style.color ="#dc3545"; // Red color for errors
+            feedbackDiv.innerHTML = messages.join('<br>');
+            feedbackDiv.style.color = "#dc3545"; // Error color
         }
-    }
     });
 });
